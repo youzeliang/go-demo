@@ -1,4 +1,4 @@
-package go_demo
+package main
 
 import "fmt"
 
