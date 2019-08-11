@@ -1,6 +1,5 @@
 package main
 
-
 func generate(ch chan<- int) {
 	for i := 2; ; i++ {
 		ch <- i // Send 'i' to channel 'ch'.
@@ -30,19 +29,12 @@ func filter(src <-chan int, dst chan<- int, prime int) {
 //}
 
 type Result1 struct {
-
 }
-
-
 
 type Result2 struct {
-
 }
 
+// fds
 
 type Result3 struct {
-
 }
-
-
-

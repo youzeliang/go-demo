@@ -5,10 +5,10 @@ import "strings"
 import "unicode/utf8"
 import "testing"
 
-
 /*
 
 go test count_test.go -bench ".*"
+
 
 */
 
@@ -35,7 +35,6 @@ func Benchmark1(b *testing.B) {
 		f1(s)
 	}
 }
-
 
 func Benchmark2(b *testing.B) {
 	for i := 0; i < b.N; i++ {
