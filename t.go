@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 
 func generate(ch chan<- int) {
 	for i := 2; ; i++ {
@@ -17,16 +15,34 @@ func filter(src <-chan int, dst chan<- int, prime int) {
 	}
 }
 
+//
+//func main(){
+//	ch := make(chan int) // Create a new channel.
+//	go generate(ch)      // Start generate() as a subprocess.
+//	for {
+//		prime := <-ch
+//		fmt.Print(prime, "\n")
+//		ch1 := make(chan int)
+//		go filter(ch, ch1, prime)
+//		ch = ch1
+//	}
+//
+//}
 
-func main(){
-	ch := make(chan int) // Create a new channel.
-	go generate(ch)      // Start generate() as a subprocess.
-	for {
-		prime := <-ch
-		fmt.Print(prime, "\n")
-		ch1 := make(chan int)
-		go filter(ch, ch1, prime)
-		ch = ch1
-	}
-	
+type Result1 struct {
+
 }
+
+
+
+type Result2 struct {
+
+}
+
+
+type Result3 struct {
+
+}
+
+
+

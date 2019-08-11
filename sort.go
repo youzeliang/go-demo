@@ -5,11 +5,11 @@ import (
 	"sort"
 )
 
-func main() {
-
-	test1()
-
-}
+//func main() {
+//
+//	test1()
+//
+//}
 
 func test1() {
 
