@@ -27,15 +27,25 @@ func main() {
 	//sendAddress(&str)
 	//fmt.Println("after calling sendAddress, str: ", str)
 
-	var wg sync.WaitGroup
-	wg.Add(3)
+	//var wg sync.WaitGroup
+	//wg.Add(3)
+	//
+	//go doSomething(1, &wg)
+	//go doSomething(2, &wg)
+	//go doSomething(3, &wg)
+	//
+	//wg.Wait()
+	//log.Printf("finish all jobs\n")
 
-	go doSomething(1, &wg)
-	go doSomething(2, &wg)
-	go doSomething(3, &wg)
 
-	wg.Wait()
-	log.Printf("finish all jobs\n")
+
+
+
+	//// 假设切片 slice 如下:
+	//slice := []int{1, 2, 3, 4, 5}
+	//
+	//// 如何使用 copy 创建切片 newSlice, 该切片值为 [2, 3, 4]
+	//newSlice = copy(,?)
 
 }
 
